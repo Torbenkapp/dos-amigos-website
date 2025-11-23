@@ -20,7 +20,8 @@ The website is automatically deployed when:
 ### Accessing the Website
 
 Once deployed, the website will be available at:
-`https://torbenkapp.github.io/dos-amigos-website/`
+- **Custom Domain**: `https://dosamigos.dk`
+- GitHub Pages URL: `https://torbenkapp.github.io/dos-amigos-website/`
 
 ### Manual Deployment
 
