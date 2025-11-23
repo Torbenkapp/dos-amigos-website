@@ -25,13 +25,15 @@ This website is deployed using **GitHub Pages** with automated deployment via **
 
 ### GitHub Actions Workflow
 
-The deployment is handled by `.github/workflows/deploy.yml` which:
+The deployment is handled by a GitHub Actions workflow which:
 - Triggers automatically on every push to the `main` branch
 - Can also be triggered manually via workflow dispatch
 - Checks out the repository
 - Configures GitHub Pages
 - Uploads the site as an artifact
 - Deploys to GitHub Pages
+
+> **Note**: If you don't see a `.github/workflows/deploy.yml` file in the main branch yet, the workflow may need to be set up. A template workflow file exists in other branches of this repository.
 
 ### What Gets Deployed?
 
@@ -106,7 +108,9 @@ You can manually trigger a deployment:
 
 ## Website URL
 
-Your website is accessible at: `https://torbenkapp.github.io/dos-amigos-website/`
+Your website is accessible at: `https://<username>.github.io/<repository-name>/`
+
+For this repository: `https://torbenkapp.github.io/dos-amigos-website/`
 
 ## Technical Details
 
