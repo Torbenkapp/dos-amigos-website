@@ -6,24 +6,26 @@ To complete the deployment of the Dos Amigos website, follow these steps:
 
 ### 1. Enable GitHub Pages
 
+**IMPORTANT:** This is the critical step that must be completed for the deployment to work.
+
 1. Go to your repository on GitHub: `https://github.com/Torbenkapp/dos-amigos-website`
-2. Click on **Settings** (gear icon)
-3. In the left sidebar, click on **Pages** (under "Code and automation")
+2. Click on **Settings** (gear icon in the top navigation)
+3. In the left sidebar, scroll down and click on **Pages** (under "Code and automation" section)
 4. Under "Build and deployment":
-   - **Source**: Select "GitHub Actions"
-5. Click **Save**
+   - **Source**: Select **"GitHub Actions"** from the dropdown
+   - This is different from "Deploy from a branch"
+5. The page will save automatically (no Save button needed)
+6. You should see a message confirming GitHub Pages is being built from GitHub Actions
 
-### 2. Trigger the Deployment
+### 2. Approve and Re-run the Workflow
 
-The deployment will automatically start when you:
-- Merge this PR to the `main` branch, OR
-- Push changes to the `copilot/deploy-latest-version` branch (already done!)
+After enabling GitHub Pages with "GitHub Actions" as the source:
 
-Alternatively, you can manually trigger the workflow:
 1. Go to the **Actions** tab in your repository
-2. Click on **Deploy to GitHub Pages** workflow
-3. Click **Run workflow** button
-4. Select the branch and click **Run workflow**
+2. You should see the "Deploy to GitHub Pages" workflows
+3. Click on the most recent workflow run
+4. If it shows "Action required" or is pending, click **"Re-run all jobs"** or **"Re-run failed jobs"**
+5. The workflow should now run successfully and deploy your site
 
 ### 3. Access Your Deployed Website
 
